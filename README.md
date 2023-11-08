@@ -2,7 +2,7 @@
 
 ### [Azzam Alhussain](http://azzam.page/), [Mingjie Lin](https://www.ece.ucf.edu/person/mingjie-lin/)
 ___
-**This is the official efficient real-time HW/SW Co-design for quantized two-stream CNN of Human Action Recognition (FPGA-QHAR) on PYNQ SoC-FPGAs that is accepted as a conference paper in the IEEE Xplore Digital Library as [FPGA-QHAR: Throughput-Optimized for Quantized Human Action Recognition on The Edge](https://ieeexplore.ieee.org/Xplore/home.jsp), and will be presented in December 2023 at the [IEEE 20th International Conference on SmartCommunities: Improving Quality of Life Using AI, Robotics and IoT](https://honet-ict.org/index.html).**
+**This is the official efficient real-time HW/SW Co-design for quantized two-stream CNN of Human Action Recognition (FPGA-QHAR) on PYNQ SoC-FPGAs that is accepted as a conference paper in the IEEE Xplore Digital Library as [FPGA-QHAR: Throughput-Optimized for Quantized Human Action Recognition on The Edge](https://arxiv.org/abs/2311.03390), and will be presented in December 2023 at the [IEEE 20th International Conference on SmartCommunities: Improving Quality of Life Using AI, Robotics and IoT](https://honet-ict.org/index.html).**
 
 ## Description
 
