@@ -6,7 +6,7 @@ ___
 
 ## Description
 
-This paper proposed an efficient customized and quantized Two-Stream HAR [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) architecture trained on [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) & [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets and implemented as HW/SW co-design on AMD PYNQ SoC-FPGAs using partially streaming dataflow architecture that achieved higher throughput versus network design and resource utilization trade-off. The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing.
+This paper proposed an end-to-end efficient customized and quantized Two-Stream HAR [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) architecture trained on [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) & [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets and implemented as HW/SW co-design on AMD PYNQ SoC-FPGAs using partially streaming dataflow architecture that achieved real-time performance of 24FPS with 81% accuracy on connected camera. The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
 
 ## Contributions
 - Developed a scalable inference accelerator for transpose convolution operation for quantized DCGAN (QDCGAN) on top of [FINN by Xilinx](https://xilinx.github.io/finn/). 
