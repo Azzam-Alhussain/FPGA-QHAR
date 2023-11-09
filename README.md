@@ -4,7 +4,7 @@
 ___
 **This is the official efficient real-time HW/SW Co-design for quantized two-stream CNN of Human Action Recognition (FPGA-QHAR) on PYNQ SoC-FPGAs that is accepted as a conference paper in the IEEE Xplore Digital Library as [FPGA-QHAR: Throughput-Optimized for Quantized Human Action Recognition on The Edge](https://arxiv.org/abs/2311.03390), and will be presented in December 2023 at the [IEEE 20th International Conference on SmartCommunities: Improving Quality of Life Using AI, Robotics and IoT](https://honet-ict.org/index.html).**
 
-## Description
+## Description & System Overview 
 
 This paper proposed an end-to-end efficient customized and quantized Two-Stream HAR [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) architecture trained on [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) & [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets and implemented as HW/SW co-design on AMD PYNQ SoC-FPGAs using partially streaming dataflow architecture that achieved real-time performance of 24FPS with 81% prediction accuracy on connected camera. 
 
@@ -13,22 +13,22 @@ This paper proposed an end-to-end efficient customized and quantized Two-Stream 
 
 
 ## Contributions
-- Developed a scalable inference accelerator for transpose convolution operation for quantized DCGAN (QDCGAN) on top of [FINN by Xilinx](https://xilinx.github.io/finn/). 
-- Provided a complete open-source framework (training to implementation stack) for investigating the effect of variable bit widths for weights and activations. 
-- Demonstrated that the weights and activations influence performance measurement, resource utilization, throughput, and the quality of the generated images.
-- The community can build upon our code, explore, and search efficient implementation of SRGAN on low-power FPGAs which are considered as a solution for a wide range of medical   and microscopic imaging applications.
-The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
+- Developed a scalable inference accelerator for QHAR on top of [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) & [NetDBFPGA](https://github.com/NetDBFPGA/ecv2021_demo/tree/master).
+- The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
+- Provided a complete open-source framework (training to implementation stack) for QHAR on SoC-FPGA and different hardware platforms. 
+- Demonstrated that the small version of UCF101 which is [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets effect positively the performance & accuracy, resource utilization, and throughput.
+- The community can build upon our code, explore, and search efficient implementation of Multimodal fusion for comprehensive ADAS with HAR action understanding on low-power FPGAs which are considered as a solution for a wide range of Autonomous applications.
 
 ## Getting Started
 
 ### Requirement
-* Nvidia GPU
+* Local Nvidia GPU or [Google Cloud GPU with Colab](https://colab.research.google.com/)
 * Linux Ubuntu 18.04
-* Python 3.6+
-* Pytorch 1.4.0+
-* Vivado 2019.3+ 
+* Python 3.7+
+* Pytorch v1.12.0+
+* Vivado 2018.3 
 * PYNQ framework 2.6
-* Xilinx SoC-FPGAs Pynq supported (ex: Ultra96 & ZCU104)
+* AMD SoC-FPGAs Pynq supported (ex: Kria KV260 & ZCU104)
 
 ### HW/SW training & implementation
 
