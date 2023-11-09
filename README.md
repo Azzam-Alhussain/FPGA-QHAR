@@ -6,13 +6,18 @@ ___
 
 ## Description
 
-This paper proposed an end-to-end efficient customized and quantized Two-Stream HAR [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) architecture trained on [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) & [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets and implemented as HW/SW co-design on AMD PYNQ SoC-FPGAs using partially streaming dataflow architecture that achieved real-time performance of 24FPS with 81% accuracy on connected camera. The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
+This paper proposed an end-to-end efficient customized and quantized Two-Stream HAR [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) architecture trained on [UCF101](https://www.crcv.ucf.edu/data/UCF101.php) & [UCF24](https://github.com/gurkirt/realtime-action-detection/blob/master/data/ucf24.py) datasets and implemented as HW/SW co-design on AMD PYNQ SoC-FPGAs using partially streaming dataflow architecture that achieved real-time performance of 24FPS with 81% accuracy on connected camera. 
+
+![Paper-Title-use-style-paper-title- (1)](https://github.com/Azzam-Alhussain/FPGA-QHAR/assets/74447207/c54a5b13-16b6-4a65-a2f8-fed7496eaac8)
+
+
 
 ## Contributions
 - Developed a scalable inference accelerator for transpose convolution operation for quantized DCGAN (QDCGAN) on top of [FINN by Xilinx](https://xilinx.github.io/finn/). 
 - Provided a complete open-source framework (training to implementation stack) for investigating the effect of variable bit widths for weights and activations. 
 - Demonstrated that the weights and activations influence performance measurement, resource utilization, throughput, and the quality of the generated images.
 - The community can build upon our code, explore, and search efficient implementation of SRGAN on low-power FPGAs which are considered as a solution for a wide range of medical   and microscopic imaging applications.
+The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
 
 ## Getting Started
 
