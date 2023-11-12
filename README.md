@@ -37,8 +37,8 @@ This paper proposed an end-to-end efficient customized and quantized Two-Stream 
 ### HW/SW training & implementation
 
 - `PyTorch` folder for training.
-- `Hardware` folder for the synthesis of the accelerator.
-- `Hardware/Pynq/` folder for deployment on xilinx SOC-FPGAs having pynq linux.
+- `HLS` folder for the synthesis of the accelerator.
+- `PYNQ_Hardware` folder for deployment on xilinx SOC-FPGAs having pynq linux.
 
 ## License
 
