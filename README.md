@@ -13,6 +13,10 @@ This paper proposed an end-to-end efficient customized and quantized Two-Stream 
 
 
 ## Contributions
+
+![Fig2 drawio (4)](https://github.com/Azzam-Alhussain/FPGA-QHAR/assets/74447207/e2f9f7b2-975d-47c0-83ae-02c5232fb972)
+
+
 - Developed a scalable inference accelerator for QHAR on top of [SimpleNet-PyTorch CNN](https://github.com/Coderx7/SimpleNet_Pytorch) & [NetDBFPGA](https://github.com/NetDBFPGA/ecv2021_demo/tree/master).
 - The developed network accelerator fused all convolutional, batch-norm, and ReLU operations into a single homogeneous layer and utilized the Lucas-Kanade motion flow method to enable an optimized on-chip engine computing on FPGA, while GPU, CPU, and Jetson don't have this capability.  
 - Provided a complete open-source framework (training to implementation stack) for QHAR on SoC-FPGA and different hardware platforms. 
