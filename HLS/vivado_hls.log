@@ -1,0 +1,25 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /media/tools/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/media/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
+/media/tools/Xilinx/Vivado/2018.3/tps/tcl/tcl8.5/tzdata/Africa/Harare can't be opened.
+INFO: [HLS 200-10] For user 'thanx' on host 'JAIRE.localdomain' (Linux_x86_64 version 6.4.10-arch1-1) on Mon Mar 01 13:00:08 CAT 2021
+INFO: [HLS 200-10] On os "Arch Linux"
+INFO: [HLS 200-10] In directory '/home/thanx/workspace/Projects/two_stream_simpnet_zcu104_hls2'
+script_104.tcl can't be opened.
+couldn't read file "script_104.tcl": no such file or directory
+    while executing
+"source script_104.tcl"
+    invoked from within
+"hls::main script_104.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [Common 17-206] Exiting vivado_hls at Mon Mar  1 13:00:09 2021...
